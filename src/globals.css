@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-800 focus-visible:ring-offset-1 focus-visible:ring-offset-transparent focus-visible:dark:ring-gray-100;
+  }
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-gray-200 text-gray-900 dark:bg-gray-900 dark:text-gray-200;
+}
