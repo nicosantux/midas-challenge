@@ -22,12 +22,10 @@ export const Input = forwardRef<HTMLInputElement, Props>(function Input(
       <label className="font-medium" htmlFor={id}>
         {label}
       </label>
-      <div className="relative ">
+      <div className="relative">
         <input
-          className={`focus-visible:ring-primary-600 w-full rounded-md bg-gray-50 p-2 font-medium ring-1 ring-gray-600 focus-visible:outline-none focus-visible:ring-2 dark:bg-gray-800 ${
-            !!errorMessage
-              ? 'ring-error-600 focus-visible:ring-error-600 dark:ring-error-400 ring-2'
-              : ''
+          className={`focus-visible:ring-primary-600 w-full rounded-md bg-gray-50 p-2 font-medium ring-1 ring-gray-600 focus-visible:outline-none focus-visible:ring-2 ${
+            !!errorMessage ? 'ring-error-600 focus-visible:ring-error-600 ring-2' : ''
           }`}
           id={id}
           ref={ref}
@@ -47,10 +45,10 @@ export const Input = forwardRef<HTMLInputElement, Props>(function Input(
         )}
       </div>
       {!!helperText && !errorMessage && (
-        <p className="text-sm font-medium text-gray-600 dark:text-gray-400">{helperText}</p>
+        <p className="text-sm font-medium text-gray-600">{helperText}</p>
       )}
       {!!errorMessage && (
-        <span className="text-error-600 dark:text-error-400 text-sm font-medium" role="alert">
+        <span className="text-error-600 text-sm font-medium" role="alert">
           {errorMessage}
         </span>
       )}

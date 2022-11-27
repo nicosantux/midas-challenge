@@ -4,7 +4,7 @@
 
 @layer utilities {
   .focus-ring {
-    @apply focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-800 focus-visible:ring-offset-1 focus-visible:ring-offset-transparent focus-visible:dark:ring-gray-100;
+    @apply focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-800 focus-visible:ring-offset-1 focus-visible:ring-offset-transparent;
   }
 }
 
@@ -15,5 +15,17 @@ body,
 }
 
 body {
-  @apply bg-gray-200 text-gray-900 dark:bg-gray-900 dark:text-gray-200;
+  @apply bg-gray-200 text-gray-900;
+}
+
+::-webkit-scrollbar {
+  @apply w-3;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-200 rounded-full;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-gray-500 border-2 border-gray-200 border-solid;
 }
