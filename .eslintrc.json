@@ -7,7 +7,8 @@
   "extends": [
     "plugin:react/recommended",
     "plugin:prettier/recommended",
-    "plugin:react-hooks/recommended"
+    "plugin:react-hooks/recommended",
+    "plugin:tailwindcss/recommended"
   ],
   "plugins": ["react", "prettier", "import", "@typescript-eslint"],
   "parser": "@typescript-eslint/parser",
@@ -24,6 +25,7 @@
     }
   },
   "rules": {
+    "tailwindcss/no-custom-classname": "off",
     "no-console": "warn",
     "react/prop-types": "off",
     "react/jsx-uses-react": "off",
