@@ -1,2 +1,2 @@
-export * from './colorScheme.type'
+export * from './activity'
 export * from './user.type'
