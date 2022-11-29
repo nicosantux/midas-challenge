@@ -1,2 +1,6 @@
+export * from './addActivity.service'
+export * from './deleteActivity.service'
+export * from './getRandomActivity.service'
+export * from './getUserActivities.service'
 export * from './loginUser.service'
 export * from './registerUser.service'
