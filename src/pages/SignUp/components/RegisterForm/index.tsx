@@ -5,7 +5,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { useMutation } from '@tanstack/react-query'
 
 import { Input, Button, Link } from '@/components'
-import { registerSchema, RegisterSchema } from '@/schemas'
+import { registerSchema, type RegisterSchema } from '@/schemas'
 import { registerUser } from '@/services'
 import { useAuth } from '@/hooks'
 
@@ -66,7 +66,7 @@ export const RegisterForm: FC = () => {
         label="Age"
         type="text"
         {...register('age', {
-          setValueAs: (age) => Number(age),
+          setValueAs: (age: string) => Number(age),
           onChange: (e: ChangeEvent<HTMLInputElement>) => {
             e.target.value = e.target.value.replace(/[^0-9]/g, '')
           },
