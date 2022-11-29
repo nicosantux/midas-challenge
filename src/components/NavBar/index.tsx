@@ -59,7 +59,10 @@ export const Navbar: FC = () => {
           <ul className="tablet:flex-row flex flex-col items-center gap-8" role="list">
             {navigationLinks.map((navLink) => (
               <li className="" key={navLink.id}>
-                <Link className="block px-4 text-gray-900 hover:underline" to={navLink.path}>
+                <Link
+                  className="focus-ring block px-4 text-gray-900 hover:underline focus-visible:underline"
+                  to={navLink.path}
+                >
                   {navLink.label}
                 </Link>
               </li>

@@ -69,7 +69,7 @@ export const LoginForm: FC = () => {
       <p className="text-center">
         New to Do Something?{' '}
         <Link
-          className="text-primary-700 hover:text-primary-500 font-bold hover:underline"
+          className="text-primary-700 hover:text-primary-500 focus-visible:text-primary-500 focus-ring font-bold hover:underline focus-visible:underline"
           to="/signUp"
         >
           Join now!

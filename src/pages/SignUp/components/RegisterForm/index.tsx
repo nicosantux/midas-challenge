@@ -100,7 +100,7 @@ export const RegisterForm: FC = () => {
       <p className="text-center">
         Already on Do Something?{' '}
         <Link
-          className="text-primary-700 hover:text-primary-500 font-bold hover:underline"
+          className="text-primary-700 hover:text-primary-500 focus-ring focus-visible:text-primary-500 font-bold hover:underline focus-visible:underline"
           to="/login"
         >
           Login
