@@ -41,7 +41,7 @@ module.exports = {
     function ({ addComponents }) {
       addComponents({
         '.container': {
-          width: 'min(1920px, 90%)',
+          width: 'min(1920px, 95%)',
           marginInline: 'auto',
         },
       })
