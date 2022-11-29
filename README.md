@@ -28,3 +28,7 @@ Start the server
   npm run dev
 ```
 
+## Deploy
+
+https://nicolas-santuccio-midas-challenge.vercel.app/
+
