@@ -1,6 +1,6 @@
 import type { Activity } from '@/types'
 
-const URL = 'http://www.boredapi.com/api/activity'
+const URL = 'https://www.boredapi.com/api/activity'
 
 export const getRandomActivity = async (filterParams: string = ''): Promise<Activity> => {
   const response = await fetch(`${URL}/?${filterParams}`)
